@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dipen Niraula | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dipen Niraula</h1>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="section">
+    <div class="home-content">
+      <img src="images/dipen_portfolio.jpg" alt="Dipen Niraula" class="profile-pic" />
+      <div>
+        <h2>Hello, I'm</h2>
+        <h1>Dipen Niraula</h1>
+        <p>
+          A creative and passionate Web Developer based in Nepal. I enjoy building websites, designing logos, and creating innovative tech solutions. I've developed projects like the Smart Socket IoT system and websites like KB Concrete.
+        </p>
+        <p>
+          Currently pursuing my studies at Kantipur City College and serving as the Secretary of the Creators Club, where I promote blogging, podcasting, and video production among students.
+        </p>
+        <p>
+          <strong>Skills:</strong> HTML, CSS, JavaScript, Python, C++, Flask, Git, Flutter<br>
+          <strong>Tools:</strong> Figma, Godot, GitHub, VS Code
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section hidden">
+    <h2>About Me</h2>
+    <p>
+      I'm Dipen Niraula, passionate about building websites and smart tech. From IoT solutions like Smart Socket to real-world business websites like KB Concrete, I love solving problems with code. I also lead tech initiatives at my college, like the Creators Club.
+    </p>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section hidden">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Smart Socket</h3>
+      <p>Control power sockets via Wi-Fi using your phone.</p>
+    </div>
+    <div class="project">
+      <h3>KB Concrete Website</h3>
+      <p>Responsive website for a construction block company.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section hidden">
+    <h2>Contact Me</h2>
+    <p>Email: dipenniraula@example.com</p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">Dipen Niraula</a></p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Dipen Niraula. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
